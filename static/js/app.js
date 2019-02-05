@@ -146,9 +146,7 @@ filter_adv_btn.on("click", function(){
 // if no click the add criteria button then click the search
     console.log(click_flag);
     d3.event.preventDefault();
-
-    if (click_flag == false){
-        
+      
 
         // Select the input element and get the raw HTML node
             var inputElement = d3.select("#filter_value");
@@ -166,8 +164,6 @@ filter_adv_btn.on("click", function(){
             .append("li").text(criteria_inputValue+": "+ inputValue);
             filter_condition.push(criteria_inputValue);
             filter_input.push(inputValue);
-           
-    }
 
     // Criterias Search:
     console.log(filter_condition);
